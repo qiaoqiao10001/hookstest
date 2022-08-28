@@ -1,0 +1,27 @@
+dl,dd {
+  margin: 0;
+}
+.friend-list{
+  border: 1px solid #000;
+  width: 200px;
+}
+.friend-group li{
+  background: #eee;
+  font-weight: bold;
+  padding: 10px;
+  
+}
+.friend-group span{
+  
+  padding: 10px;
+  display: none;
+}
+.friend-group.expanded span {
+  height: 20px;
+
+  display: block;
+}
+.friend-group span.checked{
+  background: green;
+}
+ 

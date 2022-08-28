@@ -69,4 +69,16 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 
-redux react-redux
+redux react-redux redux-thunk axios qs
+
+- redux 的思想： 提供数据 state, 提供操作 state 的方法，react-redux 只用 mapStateToProps 将 store 里面的数据通过 props 传递给 react 组件，但是组件的内部是不能够修改 redux 中的数据的
+- 通过 mapDispatchToProps 将 action 放入 props
+- Reducer 只是一些纯函数，它接收先前的 state 和 action，并返回新的 state
+
+1. 注入 redux
+
+```js
+<Provider>
+  <div>App</div>
+</Provider>
+```
